@@ -55,19 +55,20 @@ const BottomTab = createBottomTabNavigator<RootTabParamList>();
 
 function BottomTabNavigator() {
   const colorScheme = useColorScheme();
-
+// Search | Diagnose | Explorer | Reminder <- Names are strange because first two are verbs and two next are not
+// Search | Diagnose | Explore | Remind <- maybe theses are better
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Search"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
+        name="Search"
         component={TabOneScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        options={({ navigation }: RootTabScreenProps<'Search'>) => ({
+          title: 'Search',
+          tabBarIcon: ({ color }) => <TabBarIcon name="search" color={color} />,
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Modal')}
@@ -85,11 +86,35 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
+        name="Diagnose"
         component={TabTwoScreen}
         options={{
-          title: 'Tab Two',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          title: 'Diagnose',
+          tabBarIcon: ({ color }) => <TabBarIcon name="line-chart" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Home"
+        component={TabTwoScreen}
+        options={{
+          title: 'Home',
+          tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Explore"
+        component={TabTwoScreen}
+        options={{
+          title: 'Explore',
+          tabBarIcon: ({ color }) => <TabBarIcon name="book" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="Remind"
+        component={TabTwoScreen}
+        options={{
+          title: 'Remind',
+          tabBarIcon: ({ color }) => <TabBarIcon name="flash" color={color} />,
         }}
       />
     </BottomTab.Navigator>
