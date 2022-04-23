@@ -3,6 +3,7 @@ import GreenBox from '../components/GreenBox';
 import PlantList from '../components/Plants/PlantList';
 import PlantPreview from '../components/Plants/PlantPreview';
 import { Text, View } from '../components/Themed';
+import { titlesColor } from '../constants/Colors';
 import { lastResearchesPlantList } from '../mock/last-researches-plant-list';
 import { myGardenPlantList } from '../mock/my-garden-plant-list';
 
@@ -29,10 +30,12 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 15,
     alignSelf: 'flex-start',
-    marginBottom: 15
+    marginBottom: 15,
+    color: titlesColor,
   },
   subTitle: {
     alignSelf: 'flex-start',
     marginLeft: 15,
+    color: titlesColor,
   }
 });

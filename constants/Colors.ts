@@ -24,3 +24,5 @@ export default {
     tabIconSelected: tintColorLight,
   },
 };
+
+export const titlesColor = '#467A67'
