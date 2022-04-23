@@ -1,8 +1,6 @@
-import { LinearGradient } from 'expo-linear-gradient';
-import { Image, Pressable, StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../components/EditScreenInfo';
+import { Image, ScrollView, ScrollViewBase, StyleSheet } from 'react-native';
 import GreenBox from '../components/GreenBox';
+import PlantPreview from '../components/Plants/PlantPreview';
 import { Text, View } from '../components/Themed';
 
 export default function HomeScreen() {
@@ -10,6 +8,7 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>MY GARDEN</Text>
       <GreenBox></GreenBox>
+      <PlantPreview></PlantPreview>
     </View>
   );
 }
