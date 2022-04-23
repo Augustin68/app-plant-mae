@@ -1,14 +1,16 @@
 import { Image, ScrollView, ScrollViewBase, StyleSheet } from 'react-native';
 import GreenBox from '../components/GreenBox';
+import PlantList from '../components/Plants/PlantList';
 import PlantPreview from '../components/Plants/PlantPreview';
 import { Text, View } from '../components/Themed';
+import { myGardenPlantList } from '../mock/my-garden-plant-list';
 
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>MY GARDEN</Text>
       <GreenBox></GreenBox>
-      <PlantPreview></PlantPreview>
+      <PlantList plantList={myGardenPlantList}/>
     </View>
   );
 }
