@@ -59,7 +59,7 @@ function BottomTabNavigator() {
 // Search | Diagnose | Explore | Remind <- maybe theses are better
   return (
     <BottomTab.Navigator
-      initialRouteName="Search"
+      initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
