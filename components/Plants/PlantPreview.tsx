@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   plantPreviewImage: {
     height: 75,
     width: 75,
-    resizeMode: 'contain',
+    resizeMode: 'cover',
   },
   plantLabel: {
     // textAlign: 'justify'

@@ -3,6 +3,7 @@ import GreenBox from '../components/GreenBox';
 import PlantList from '../components/Plants/PlantList';
 import PlantPreview from '../components/Plants/PlantPreview';
 import { Text, View } from '../components/Themed';
+import { lastResearchesPlantList } from '../mock/last-researches-plant-list';
 import { myGardenPlantList } from '../mock/my-garden-plant-list';
 
 export default function HomeScreen() {
@@ -13,7 +14,7 @@ export default function HomeScreen() {
       <Text style={[styles.subTitle, {marginTop: 15}]}>My garden</Text>
       <PlantList plantList={myGardenPlantList}/>
       <Text style={styles.subTitle}>Last researches</Text>
-      <PlantList plantList={myGardenPlantList}/>
+      <PlantList plantList={lastResearchesPlantList}/>
     </View>
   );
 }
