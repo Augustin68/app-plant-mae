@@ -8,11 +8,11 @@ export default function PlantPreview(props: {
 }) {
   return (
     <View style={styles.plantPreview}>
-    <View style={styles.plantPreviewImageWrapper}>
-      <Image style={styles.plantPreviewImage} source={props.plant.imageSrc}/>
+      <View style={styles.plantPreviewImageWrapper}>
+        <Image style={styles.plantPreviewImage} source={props.plant.imageSrc}/>
+      </View>
+      <Text ellipsizeMode='tail' numberOfLines={1} style={styles.plantLabel}>{props.plant.name}</Text>
     </View>
-    <Text>{props.plant.name}</Text>
-  </View>
   )
 }
 
@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
   plantPreview: {
     display: 'flex',
     alignItems: 'center',
+    marginHorizontal: 5,
+    width: 100
   },
   plantPreviewImageWrapper: {
     borderRadius: 50,
@@ -28,8 +30,11 @@ const styles = StyleSheet.create({
     borderColor: 'black',
   },
   plantPreviewImage: {
-    height: 70,
-    width: 70,
+    height: 75,
+    width: 75,
     resizeMode: 'contain',
+  },
+  plantLabel: {
+    // textAlign: 'justify'
   }
   });

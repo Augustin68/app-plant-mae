@@ -14,7 +14,7 @@ export default function PlantList(props: {
     >
       {
         props.plantList.map((plant, idx) => 
-          <PlantPreview 
+          <PlantPreview
             key={plant.name+idx}
             plant={plant}
           />
@@ -27,5 +27,5 @@ export default function PlantList(props: {
 const styles = StyleSheet.create({
   plantListWrapper: {
     margin: 10
-  }
+  },
 });

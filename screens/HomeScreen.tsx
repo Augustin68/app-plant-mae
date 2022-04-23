@@ -1,4 +1,4 @@
-import { Image, ScrollView, ScrollViewBase, StyleSheet } from 'react-native';
+import { Image, ImageBackgroundBase, ScrollView, ScrollViewBase, StyleSheet } from 'react-native';
 import GreenBox from '../components/GreenBox';
 import PlantList from '../components/Plants/PlantList';
 import PlantPreview from '../components/Plants/PlantPreview';
@@ -10,6 +10,9 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>MY GARDEN</Text>
       <GreenBox></GreenBox>
+      <Text style={[styles.subTitle, {marginTop: 15}]}>My garden</Text>
+      <PlantList plantList={myGardenPlantList}/>
+      <Text style={styles.subTitle}>Last researches</Text>
       <PlantList plantList={myGardenPlantList}/>
     </View>
   );
@@ -27,4 +30,8 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     marginBottom: 15
   },
+  subTitle: {
+    alignSelf: 'flex-start',
+    marginLeft: 15,
+  }
 });
