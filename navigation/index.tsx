@@ -99,6 +99,7 @@ function BottomTabNavigator() {
         options={{
           title: 'Home',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+          tabBarLabel: () => null
         }}
       />
       <BottomTab.Screen
