@@ -9,6 +9,7 @@ import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
+import { AvatarComponent } from '../components/Avatar';
 
 import Colors, { titlesColor } from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
@@ -109,21 +110,10 @@ function BottomTabNavigator() {
           title: 'Plant collection',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
           tabBarLabel: () => null,
-          // headerRight: () => (
-            // <Pressable
-            //   onPress={() => navigation.navigate('Modal')}
-            //   style={({ pressed }) => ({
-            //     opacity: pressed ? 0.5 : 1,
-            //   })}>
-            //   <FontAwesome
-            //     name="info-circle"
-            //     size={25}
-            //     color={Colors[colorScheme].text}
-            //     style={{ marginRight: 15 }}
-            //   />
-            // </Pressable>
+          headerRight: () => (
+            <AvatarComponent></AvatarComponent>
             // ON PEUT FOUTRE L'IMAGE DE PROFILE ICI
-          // ),
+          ),
         })}
       />
       <BottomTab.Screen
