@@ -105,25 +105,6 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Home"
         component={HomeScreen}
-        // options={{
-        //   title: 'Plant collection',
-        //   tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-        //   tabBarLabel: () => null
-        //   headerRight: () => (
-        //     <Pressable
-        //       onPress={() => navigation.navigate('Modal')}
-        //       style={({ pressed }) => ({
-        //         opacity: pressed ? 0.5 : 1,
-        //       })}>
-        //       <FontAwesome
-        //         name="info-circle"
-        //         size={25}
-        //         color={Colors[colorScheme].text}
-        //         style={{ marginRight: 15 }}
-        //       />
-        //     </Pressable>
-        //   ),
-        // }}
         options={({ navigation }: RootTabScreenProps<'Home'>) => ({
           title: 'Plant collection',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
