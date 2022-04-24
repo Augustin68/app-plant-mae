@@ -33,11 +33,13 @@ const styles = StyleSheet.create({
     plantName: {
         fontSize: 30,
         marginBottom: 20,
+        marginTop: 20,
+        marginLeft: 10,
     },
     plantDescription: {
-        fontSize: 15,
+        fontSize: 18,
         textAlign: 'justify',
-        marginHorizontal: 20
+        marginHorizontal: 25
     }
   });
   

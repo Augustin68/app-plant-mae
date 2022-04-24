@@ -45,7 +45,8 @@ function RootNavigator() {
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
         <Stack.Screen name="Plant" component={PlantScreen} options={(navigation) => ({
-          title: navigation.route.params.plant.name
+          title: navigation.route.params.plant.name,
+          headerShown: false,
         })} />
       </Stack.Group>
     </Stack.Navigator>

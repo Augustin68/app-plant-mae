@@ -4,16 +4,13 @@ export const myGardenPlantList: Plant[] = [
     {
         name: 'Monstera',
         imageSrc: require('../assets/images/plants/monstera-plant.jpg'),
-        description: "Le faux philodendron, appelé couramment monstera, appartient à la famille des Aracées, la même que le philodendron, mais il se cultive plus facilement que ce dernier. Son nom botanique est Monstera deliciosa. Au naturel, c’est une plante épiphyte qui grimpe sur les arbres et crée de grandes lianes robustes de plus de 15 m de haut. En pot, il s’appuie sur un pilier, un mur ou de grands tuteurs garnis de mousse pour pouvoir se développer. Il atteindra entre 2 et 5 m en intérieur selon les conditions de culture."
-        +"L’aspect décoratif de ses larges feuilles découpées, qui peuvent atteindre 1 m de long sur 70 cm de large, est particulièrement apprécié en décoration d’intérieur. Ces feuilles sont lustrées, entières quand elles sont jeunes puis de plus en plus découpées."
-        
-        +"Cette plante grimpante pousse vigoureusement tout au long de l’année, elle demande donc de l’espace pour se développer. Un grand salon ou un large hall d’entrée l’accueilleront idéalement. Le monstera demande une bonne luminosité, mais ne supporte pas le soleil direct. Il aime une chaleur comprise entre 18 et 25 °C toute l’année, mais s’adapte aussi à une culture en véranda avec une température autour de 12 à 15 °C en hiver. En dessous, il arrête sa croissance puis se flétrit."
-        
-        +"Le faux philodendron peut fleurir, plutôt en serre ou en jardin d’hiver, quand la chaleur et l’humidité sont suffisantes. Les grandes fleurs crème en forme de spathes produisent ensuite un gros fruit conique et comestible au bout d’un an, dont le goût rappelle la poire et la goyave."
+        description: "The Monstera, also known as a Swiss Cheese plant, originates from the forests of central and south America. In its tropical home, the ornamental leaf plant winds liana-like around tree trunks up to the crowns of the forest giants. The Monstera deliciosa is one of the most widely spread varieties. It has once again become fashionable as a houseplant for the past few years. Monstera prints decorate furnishings and posters. It has once again become fashionable and individual Monstera leaves stylishly decorate vases. The large-leaved plants with their conspicuous, slit leaves, draw everyone’s attention. Their easy-care has also contributed extensively to their popularity\n\n"
+        + "There are between 20 and 50 species of the genus Monstera, which vary in leaf-shape and growth. While some have deep, pinnatifid leaves, others are less extensively holey and form no or only a few aerial roots. Unlike most other Swiss Cheese species, the margins of the ‘Monkey Leaf’ Monstera remain closed, so they retain their holey appearance."
     },
     {
         name: 'Bonsaï',
         imageSrc: require('../assets/images/plants/bonsai.jpg'),
+        description: "This is a living dwarf tree. The word bonsai can also refer to the art of training and growing these dwarf plants in containers. \n\n Bonsai specimens are ordinary trees and shrubs, not hereditary dwarfs; they are dwarfed by a system of pruning roots and branches and training branches by tying them with wire. The art originated in China, but has been pursued and developed primarily by the Japanese. The inspiration for bonsai is found in nature, in trees that grow in harsh, rocky places, and are dwarfed and gnarled throughout their existence. Bonsai may live for a century or more and can be handed down from one generation to another. Bonsai pots, usually earthenware and of variable shape, are carefully chosen to harmonize in color and proportion with the tree. \n\n A sizable bonsai industry exists as part of the nursery industry in Japan. California is home to a small-scale bonsai industry."
     },
     {
         name: 'Ficus',
