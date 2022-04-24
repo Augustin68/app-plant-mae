@@ -15,6 +15,7 @@ import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
 import ModalScreen from '../screens/ModalScreen';
 import NotFoundScreen from '../screens/NotFoundScreen';
+import PlantScreen from '../screens/PlantScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
@@ -43,6 +44,7 @@ function RootNavigator() {
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen name="Plant" component={PlantScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );
@@ -100,11 +102,45 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Home"
         component={HomeScreen}
-        options={{
+        // options={{
+        //   title: 'Plant collection',
+        //   tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
+        //   tabBarLabel: () => null
+        //   headerRight: () => (
+        //     <Pressable
+        //       onPress={() => navigation.navigate('Modal')}
+        //       style={({ pressed }) => ({
+        //         opacity: pressed ? 0.5 : 1,
+        //       })}>
+        //       <FontAwesome
+        //         name="info-circle"
+        //         size={25}
+        //         color={Colors[colorScheme].text}
+        //         style={{ marginRight: 15 }}
+        //       />
+        //     </Pressable>
+        //   ),
+        // }}
+        options={({ navigation }: RootTabScreenProps<'Home'>) => ({
           title: 'Plant collection',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-          tabBarLabel: () => null
-        }}
+          tabBarLabel: () => null,
+          // headerRight: () => (
+            // <Pressable
+            //   onPress={() => navigation.navigate('Modal')}
+            //   style={({ pressed }) => ({
+            //     opacity: pressed ? 0.5 : 1,
+            //   })}>
+            //   <FontAwesome
+            //     name="info-circle"
+            //     size={25}
+            //     color={Colors[colorScheme].text}
+            //     style={{ marginRight: 15 }}
+            //   />
+            // </Pressable>
+            // ON PEUT FOUTRE L'IMAGE DE PROFILE ICI
+          // ),
+        })}
       />
       <BottomTab.Screen
         name="Explore"

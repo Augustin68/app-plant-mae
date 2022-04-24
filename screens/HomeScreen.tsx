@@ -26,16 +26,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 30,
+    // fontWeight: 'bold',
     marginLeft: 15,
     alignSelf: 'flex-start',
     marginBottom: 15,
     color: titlesColor,
+    fontFamily: 'Futura Medium BT'
   },
   subTitle: {
     alignSelf: 'flex-start',
-    marginLeft: 15,
+    marginLeft: 20,
     color: titlesColor,
+    fontSize: 18,
   }
 });

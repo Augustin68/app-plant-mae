@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { Plant } from "../../models/Plant";
@@ -7,17 +8,24 @@ import PlantPreview from "./PlantPreview";
 export default function PlantList(props: {
   plantList: Plant[]
 }) {
-  return (
+  
+  const navigation = useNavigation()
+  const plantPressed = (plant: Plant) => {
+    console.log("COUCOU TA APPUYER SUR PLANTE " + plant.name)
+    navigation.navigate('Plant', {params: plant});
+  }
+  return ( 
     <ScrollView
       style={styles.plantListWrapper}
       horizontal={true}
     >
       {
         props.plantList.map((plant, idx) => 
+        <Pressable key={plant.name+idx} onPress={() => plantPressed(plant)}>
           <PlantPreview
-            key={plant.name+idx}
             plant={plant}
           />
+        </Pressable>
         )
       }
     </ScrollView>

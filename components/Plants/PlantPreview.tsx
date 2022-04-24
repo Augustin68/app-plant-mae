@@ -1,13 +1,14 @@
+import { useNavigation } from "@react-navigation/native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Image, Pressable, StyleSheet } from 'react-native';
 import { Plant } from "../../models/Plant";
 import { Text, View } from '../Themed';
 
 export default function PlantPreview(props: {
-  plant: Plant
+  plant: Plant,
 }) {
   return (
-    <View style={styles.plantPreview}>
+    <View style={styles.plantPreview} >
       <View style={styles.plantPreviewImageWrapper}>
         <Image style={styles.plantPreviewImage} source={props.plant.imageSrc}/>
       </View>

@@ -27,18 +27,18 @@ const styles = StyleSheet.create({
       height: '50%',
       paddingHorizontal: 15,
       alignItems: 'center',
-      // paddingVertical: 10,
       borderRadius: 15
     },
     greenBoxLabel: {
       color: 'white',
-      fontSize: 15,
+      fontSize: 20,
       paddingBottom: 20,
     },
     addPlantBtn: {
       paddingVertical: 10,
       paddingHorizontal: 20,
       borderRadius: 20,
+      fontFamily: 'Futura Medium BT'
     },
     addPlantBtnUnpressed: {
         backgroundColor: '#2C675E',
@@ -47,13 +47,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#4A7B74',
     },
     addPlantBtnTxt: {
-      fontWeight: 'bold',
-      fontSize: 15,
+      fontSize: 23,
       color: 'white',
     },
     greenBoxImage: {
       resizeMode: 'contain',
-      height: 270,
-      width: 270,
+      height: 250,
+      width: 250,
     }
   });
