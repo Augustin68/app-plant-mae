@@ -10,6 +10,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import * as React from 'react';
 import { ColorSchemeName, Pressable } from 'react-native';
 import { AvatarComponent } from '../components/Avatar';
+import { Text } from '../components/Themed';
 
 import Colors, { titlesColor } from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
@@ -69,10 +70,13 @@ function BottomTabNavigator() {
       initialRouteName="Home"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
-       headerTitleStyle: {
-        color: titlesColor,
-        fontFamily: 'Futura Medium BT'
-       }
+        headerTitleStyle: {
+          color: titlesColor,
+          fontFamily: 'Futura Medium BT'
+        },
+        tabBarLabelStyle: {
+          fontFamily: 'Futura Medium BT'
+        }
       }}>
       <BottomTab.Screen
         name="Search"
@@ -110,7 +114,7 @@ function BottomTabNavigator() {
         options={({ navigation }: RootTabScreenProps<'Home'>) => ({
           title: 'Plant collection',
           tabBarIcon: ({ color }) => <TabBarIcon name="home" color={color} />,
-          tabBarLabel: () => null,
+          tabBarLabel: 'Home',
           headerRight: () => (
             <AvatarComponent></AvatarComponent>
             // ON PEUT FOUTRE L'IMAGE DE PROFILE ICI

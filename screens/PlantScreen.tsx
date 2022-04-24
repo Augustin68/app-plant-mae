@@ -80,7 +80,8 @@ const styles = StyleSheet.create({
     plantDescription: {
         fontSize: 18,
         textAlign: 'justify',
-        marginHorizontal: 25
+        marginHorizontal: 25,
+        marginBottom: 20,
     },
     switchWrapper: {
         display: 'flex',

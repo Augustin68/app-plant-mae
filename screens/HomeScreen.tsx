@@ -1,4 +1,4 @@
-import { Image, ImageBackgroundBase, ScrollView, ScrollViewBase, StyleSheet } from 'react-native';
+import { Image, ScrollView, ScrollViewBase, StyleSheet, ImageBackground } from 'react-native';
 import GreenBox from '../components/GreenBox';
 import PlantList from '../components/Plants/PlantList';
 import PlantPreview from '../components/Plants/PlantPreview';
@@ -10,12 +10,14 @@ import { myGardenPlantList } from '../mock/my-garden-plant-list';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>MY GARDEN</Text>
-      <GreenBox></GreenBox>
-      <Text style={[styles.subTitle, {marginTop: 15}]}>My garden</Text>
-      <PlantList plantList={myGardenPlantList}/>
-      <Text style={styles.subTitle}>Last researches</Text>
-      <PlantList plantList={lastResearchesPlantList}/>
+      <ImageBackground source={require('../assets/images/background-flower.png')} resizeMode="cover" style={[styles.bgImg]}>
+        <Text style={styles.title}>MY GARDEN</Text>
+        <GreenBox></GreenBox>
+        <Text style={[styles.subTitle, {marginTop: 15}]}>My garden</Text>
+        <PlantList plantList={myGardenPlantList}/>
+        <Text style={styles.subTitle}>Last researches</Text>
+        <PlantList plantList={lastResearchesPlantList}/>
+      </ImageBackground>
     </View>
   );
 }
@@ -23,7 +25,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    // alignItems: 'center',
   },
   title: {
     fontSize: 30,
@@ -39,5 +41,9 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     color: titlesColor,
     fontSize: 18,
+  },
+  bgImg : {
+    flex: 1,
+    alignItems: 'center',
   }
 });

@@ -6,7 +6,7 @@ export default {
     text: '#000',
     background: '#fff',
     tint: tintColorLight,
-    tabIconDefault: '#ccc',
+    tabIconDefault: '#000',
     tabIconSelected: tintColorLight,
   },
   // dark: {
@@ -20,7 +20,7 @@ export default {
     text: '#000',
     background: '#fff',
     tint: tintColorLight,
-    tabIconDefault: '#ccc',
+    tabIconDefault: '#000',
     tabIconSelected: tintColorLight,
   },
 };

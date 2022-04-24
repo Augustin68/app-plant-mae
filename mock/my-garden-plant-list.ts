@@ -15,6 +15,9 @@ export const myGardenPlantList: Plant[] = [
     {
         name: 'Ficus',
         imageSrc: require('../assets/images/plants/ficus.jpg'),
+        description: "Ficus, (genus Ficus), genus of about 900 species of trees, shrubs, and vines in the family Moraceae, many of which are commonly known as figs. Native primarily to tropical areas of East Asia, they are distributed throughout the world’s tropics. Many are tall forest trees that are buttressed by great spreading roots; others are planted as ornamentals.\n\n"
+        + "Most Ficus species are evergreen; there are a few deciduous members in nontropical areas. The leaves are usually simple and waxy, and most exude white or yellow latex when broken. Many species have aerial roots, and a number are epiphytic. The unusual fruit structure, known as a syconium, is hollow, enclosing an inflorescence with tiny male and female flowers lining the inside.\n\n"
+        + "Members of the genus are characterized by a unique pollination syndrome. Each species is pollinated by and houses the young of a species-specific wasp (see fig wasp). This remarkable pollination system has a fundamental impact on tropical forest ecology. When the pollen-bearing wasp leaves a Ficus plant, the fruit crop ripens quickly, providing a rich feast that attracts a host of mammals and birds.\n\n Moreover, as a consequence of the wasp’s short adult lifetime (as little as two days), there are some trees both receiving and releasing fig wasps throughout the year. This pattern results in a steady supply of fruit, making Ficus fruits a critical resource for many animals during times of food shortage. If the plants were to be cut out of a forest or the fig wasps were to somehow be removed, there would almost certainly be a dramatic reduction in animal life, as is suggested by the lower population densities of fruit-eating mammals on small islands that lack Ficus species."
     },
     {
         name: 'Cactus',

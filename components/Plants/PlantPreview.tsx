@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     marginHorizontal: 5,
-    width: 100
+    width: 100,
+    backgroundColor: 'transparent',
   },
   plantPreviewImageWrapper: {
     borderRadius: 50,
