@@ -71,6 +71,7 @@ function BottomTabNavigator() {
         tabBarActiveTintColor: Colors[colorScheme].tint,
        headerTitleStyle: {
         color: titlesColor,
+        fontFamily: 'Futura Medium BT'
        }
       }}>
       <BottomTab.Screen
