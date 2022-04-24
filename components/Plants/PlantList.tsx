@@ -12,7 +12,7 @@ export default function PlantList(props: {
   const navigation = useNavigation()
   const plantPressed = (plant: Plant) => {
     console.log("COUCOU TA APPUYER SUR PLANTE " + plant.name)
-    navigation.navigate('Plant', {params: plant});
+    navigation.navigate('Plant', {plant});
   }
   return ( 
     <ScrollView
